@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One|Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Stalinist+One&subset=cyrillic,latin-ext");
+.wrap {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite; }
+
+@keyframes caret {
+  0% {
+    border-color: #fff; }
+  50% {
+    border-color: #fff; }
+  100% {
+    border-color: #fff; } }
+p .headerAnim {
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  background: url("../images/animated_text_fill.png") repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 40s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden; }
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%; }
+  100% {
+    background-position: 100% 50%; } }
+.preloader {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: #FFF;
+  z-index: 99;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible; }
+  .preloader #minecraft {
+    z-index: 120;
+    background-image: -webkit-radial-gradient(#d60f2b, #42030f);
+    background-image: radial-gradient(#d60f2b, #42030f);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+
+.done {
+  opacity: 0;
+  visibility: hidden; }
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+.containerCenter {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+#mainScreen {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../images/main5.png");
+  display: flex;
+  text-align: center; }
+  #mainScreen h1 {
+    z-index: 20;
+    font-family: "Russo One", sans-serif;
+    color: #fff;
+    font-size: 40pt;
+    font-style: none;
+    font-weight: none;
+    text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1); }
+  #mainScreen .headerAnim {
+    font-family: "Russo One", sans-serif;
+    color: #fff;
+    font-size: 80px;
+    font-style: none;
+    font-weight: none; }
+
+#serversStats {
+  background: blue;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+/*# sourceMappingURL=style.css.map */
